@@ -59,14 +59,7 @@ export const Form = () => {
        }
     }
 
-    useEffect(()=>{
-        if(mailStatus === "loading"){
-            setTimeout(() => {
-                toggleShow(false);
-                setStatus("initial");
-            }, 6000);
-        }
-    },[mailStatus])
+
 
 
     const updateForm = (e) => {
