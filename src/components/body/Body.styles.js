@@ -22,7 +22,10 @@ export const StyledTop = styled.div`
             color: ${ props => props.theme.textColor};
             white-space:nowrap;
             line-height:normal;
+
+            text-overflow: hidden;
         }
+
         p{
             margin-top: 20px;
             font-size:19px;
@@ -82,13 +85,14 @@ export const Heading = styled.h1`
         text-align:center;
 `
 
-export const PorjectGrid = styled.div`
+export const ProjectGrid = styled.div`
     display:grid;
     grid-template-columns:1fr 1fr;
     row-gap:60px;
+    column-gap:60px;
      padding:60px 0;
 
-     @media (max-width:735px) {
+     @media (max-width:580px) {
         grid-template-columns:1fr;
      }
 `

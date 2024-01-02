@@ -5,13 +5,23 @@ export const StyledProject = styled.a`
     border-radius: 20px 0px;
     box-shadow: 0px 0px 10px 0px ${ props => props.theme.oppColor};
     color: ${ props => props.theme.textColor };
-    width: 300px;
+    max-width: 300px;
     height: 390px;
     flex-shrink: 0;
     padding:16px;
     margin:0 auto;
 
     svg{
+        width: 100%;
+        height: 150px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: 1px solid;
+        display:flex;
+        margin:0 auto;
+    }
+
+    img{
         width: 100%;
         height: 150px;
         flex-shrink: 0;
@@ -58,6 +68,11 @@ export const StyledProject = styled.a`
             text-align:left;
             font-weight: 500;
             line-height: normal;
+        }
+
+        div{
+           display: flex;
+           justify-content: space-between;
         }
         
         

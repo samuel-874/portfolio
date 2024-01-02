@@ -2,10 +2,12 @@ import drawing from "../../assets/drawing.svg";
 import { Project } from "../project preview/Project";
 import porview from "../../assets/image 1.svg";
 
-import { ATS, Heading, PorjectGrid, Projects, StyledBody, StyledTop, Technologies } from "./Body.styles";
+import { ATS, Heading, ProjectGrid, Projects, StyledBody, StyledTop, Technologies } from "./Body.styles";
 import { TechBar } from "../tech bar/TechBar";
 import { AboutMe } from "../about me/AboutMe";
 import { useState } from "react";
+import prime_drop from "../../assets/prime_drop.png"
+import favourite_stylist from "../../assets/favourite_stylist.png"
 import { Form } from "../contact form/Form";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
@@ -33,12 +35,12 @@ export const Body = () => {
         </StyledTop>
         <Projects>
             <h1 id="projects">Projects</h1>
-            <PorjectGrid>
+            <ProjectGrid>
                 <Project title={"Rider Share Api"} link={"https://github.com/samuel-874/thirdive"} description={"This is an api for powering a rider share application. It allows for users to book ride and manages order out-of the box"}  />
-                <Project title={"Logistics App"} link={"https://github.com/samuel-874/Prime-Drop"} description={"A Fullstack application for booking, managing and updating users order. it allows for real-time product tracking."} />
-                <Project link={"https://github.com/samuel-874/favourite-stylist"} title={"Stylist Booking App"} description={"An app that allow customer to find registered stylist in there location with out off the box support for online leactures and stylist training"} />
-                <Project link={"https://github.com/samuel-874/news-api"} title={"New's Api"} description={"This is and api that allows for CRUD operation thereby makeing it possible to post, news and report"} />
-            </PorjectGrid>
+                <Project title={"Logistics App"} link={"https://prime-drop.vercel.app/dashboard"} description={"A Fullstack application for booking, managing and updating users order. it allows for real-time product tracking."} img={prime_drop} />
+                <Project title={"Stylist Booking App"}  link={"https://favourite-stylist.vercel.app/"} description={"An app that allow customer to find registered stylist in there location with out off the box support for online leactures and stylist training"} img={favourite_stylist} />
+                <Project title={"New's Api"}  link={"https://github.com/samuel-874/news-api"} description={"This is and api that allows for CRUD operation thereby makeing it possible to post, news and report"} />
+            </ProjectGrid>
         </Projects>
         <Technologies>
             <h1 id="technologies">Technologies</h1>

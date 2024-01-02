@@ -23,7 +23,7 @@ export const StyledHeader = styled.header`
 
             li{
                 position:relative;
-                margin:0 8px;
+                margin:0 15px;
 
                 & :hover{
                     color: #0087ca;
